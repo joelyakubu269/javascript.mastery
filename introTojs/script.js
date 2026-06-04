@@ -118,8 +118,10 @@ const Spin= ()=> {
     }
  const reels= Spin()
  const rows = transpose(reels)
+ const print= printRows(rows)
  console.log(reels)
  console.log(rows)
+ console.log(print)
 
 let balance = AmountDeposited()
 const bet = CollectBetAmount(balance)
