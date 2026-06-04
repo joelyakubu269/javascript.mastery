@@ -87,7 +87,7 @@ const Spin= ()=> {
         for(let j= 0; j< ROW; j++) {
         const randomIdx = Math.floor(Math.random() * reels_Symbols.length)
         const selected_Symbol = reels_Symbols[randomIdx]
-        reels[i].push(selected_Symbol) // fills three random symbols for each row
+        reels[i].push(selected_Symbol) // fills three random symbols for each column
         reels_Symbols.splice(randomIdx,1)
 
         }
@@ -95,6 +95,16 @@ const Spin= ()=> {
     }
     return reels
 }
+    const transpose=(reels)=> {
+        const rows= []
+        for(let i=0; i< ROW;i++) {
+            rows.push([])
+            for(let j=0;j< COL;j++) {
+                rows[i].push(reels[j][i]) //push all the characters for each index at that row
+            }
+        }
+        return rows
+    }
  const val= Spin()
  console.log(val)
 
