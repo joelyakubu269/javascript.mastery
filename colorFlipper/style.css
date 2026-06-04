@@ -1,0 +1,15 @@
+.qoute{
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 200;
+font-size: large;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#blue{
+    
+}
