@@ -8,19 +8,23 @@ const setTime=()=>{
     const remainingMinutes= secondsElapsed % 60
     return `${padTime(minutes)}: ${padTime(remainingMinutes)}` 
 }
+const updateDisplay = () => {
+  time.textContent = setTime();
+};
+
 const StartTimer=()=> {
    secondsElapsed++
-   setTime()
-   time.textContent= setTime()
+   updateDisplay()
 }
 const start=()=>{
+    if(intervaL) return
     intervaL= setInterval(StartTimer,1000)
-    setTime()
-    time.textContent= setTime()
+    updateDisplay()
 }
 const stop=()=>{
      clearInterval(intervaL)
-    setTime()
+     intervaL= null
+    updateDisplay()
 }
 const Reset=()=> {
     clearInterval(intervaL)
