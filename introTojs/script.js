@@ -79,14 +79,15 @@ const Spin= ()=> {
         }
     }
     const reels = []
-    reels.push([])
+    
     const reels_Symbols = [...symbols] // to have where symbols can be selected and removed without touching the original
     // so it can be available for the next iteration
     for (let i=0; i< COL;i++) {
+        reels.push([])
         for(let j= 0; j< ROW; j++) {
         const randomIdx = Math.floor(Math.random() * reels_Symbols.length)
         const selected_Symbol = reels_Symbols[randomIdx]
-        reels[i].push(selected_Symbol)
+        reels[i].push(selected_Symbol) // fills three random symbols for each row
         reels_Symbols.splice(randomIdx,1)
 
         }
