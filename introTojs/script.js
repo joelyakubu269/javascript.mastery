@@ -119,7 +119,7 @@ const Spin= ()=> {
     }
         
     }
-    const winnings=(rows,TotalBet, lines)=> {
+    const getwinnings=(rows,TotalBet, lines)=> {
         let winnings = 0
         for(let row=0; row<rows;row++) {
             const symbols= rows[row]
@@ -135,12 +135,14 @@ const Spin= ()=> {
             }
         }
     }
+    let balance = AmountDeposited()
+const {TotalBet,lines} = CollectBetAmount(balance)
+console.log(TotalBet)
  const reels= Spin()
  const rows = transpose(reels)
  console.log(reels)
  console.log(rows)
   printRows(rows)
+  const winnings= getwinnings(rows,TotalBet,lines)
+  console.log("you won,$" + winnings.tostring())
 
-let balance = AmountDeposited()
-const {TotalBet,lines} = CollectBetAmount(balance)
-console.log(TotalBet)
