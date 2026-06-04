@@ -1,5 +1,5 @@
 const body = document.getElementsByTagName("body")[0]
-const myMessage= document.getElementById("message")
+const myMessage= document.getElementsByClassName("message")[0]
 const change=(name)=> {
     if (name==="red") {
         myMessage.innerHTML= "she showed you the flags bruv, but you still went ahead"
@@ -26,6 +26,6 @@ const random=()=>{
     const randomIdx = Math.floor(Math.random() * buffer.length)
     const name = buffer[randomIdx]
     buffer.splice(randomIdx,1)
-    
     body.style.backgroundColor= name
+     myMessage.innerHTML= "The gods do not play dice"
 }
