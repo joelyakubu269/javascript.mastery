@@ -40,7 +40,7 @@ const AmountDeposited=()=> {
 }
 
 const CollectBetAmount=(balance)=> {
-    let lines
+    //let lines
     while(true) {
         console.log("number of lines to be betted on must not exceed 3")
          const linesInput= getInput("please enter the number of lines you wish to bet on(q to quit): ")
@@ -65,7 +65,7 @@ const CollectBetAmount=(balance)=> {
         continue
     }else {
         const TotalBet= Bet * lines
-        return TotalBet
+        return {TotalBet,lines}
     }
     
     }
@@ -106,23 +106,41 @@ const Spin= ()=> {
         return rows
     }
     const printRows=(rows)=> {
+        for(const row of rows) {
         let rowString= ""
-        for(const[i,symbol] of rows.entries()) {
+        for(const[i,symbol] of row.entries()) {
             rowString+= symbol
             if(i!= rows.length -1) {
                 rowString+= "|"
             }
 
         }
-        return rowString
+        console.log(rowString)
+    }
+        
+    }
+    const winnings=(rows,TotalBet, lines)=> {
+        let winnings = 0
+        for(let row=0; row<rows;row++) {
+            const symbols= rows[row]
+            let allsame= true
+            for(const symbol of symbols) {
+                if (symbol!= symbols[0]) {
+                    allsame= false
+                    break
+                }
+            }
+            if (allsame) {
+                winnings+= bet * Symbol_values[symbols[0]]
+            }
+        }
     }
  const reels= Spin()
  const rows = transpose(reels)
- const print= printRows(rows)
  console.log(reels)
  console.log(rows)
- console.log(print)
+  printRows(rows)
 
 let balance = AmountDeposited()
-const bet = CollectBetAmount(balance)
-console.log(bet)
+const {TotalBet,lines} = CollectBetAmount(balance)
+console.log(TotalBet)
