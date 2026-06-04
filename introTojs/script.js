@@ -75,24 +75,27 @@ const Spin= ()=> {
     symbols= [] // serves as a storage for the symbols
     for( const [symbol,count] of Object.entries(Symbol_Count)) {
         for(let i=0; i< count; i++) {
-            symbol.push(symbol)
+            symbols.push(symbol)
         }
     }
-    const reels = [[] ,[] ,[]]
+    const reels = []
+    reels.push([])
     const reels_Symbols = [...symbols] // to have where symbols can be selected and removed without touching the original
     // so it can be available for the next iteration
     for (let i=0; i< COL;i++) {
         for(let j= 0; j< ROW; j++) {
         const randomIdx = Math.floor(Math.random() * reels_Symbols.length)
         const selected_Symbol = reels_Symbols[randomIdx]
-        reels.push(selected_Symbol)
+        reels[i].push(selected_Symbol)
         reels_Symbols.splice(randomIdx,1)
 
         }
 
     }
+    return reels
 }
- Spin()
+ const val= Spin()
+ console.log(val)
 
 let balance = AmountDeposited()
 const bet = CollectBetAmount(balance)
