@@ -24,6 +24,7 @@ const AmountDeposited=()=> {
 const CollectBetAmount=(balance)=> {
     let lines
     while(true) {
+        console.log("number of lines to be betted on must not exceed 3")
          const linesInput= getInput("please enter the number of lines you wish to bet on(q to quit): ")
           
         const lines = parseInt(linesInput)
