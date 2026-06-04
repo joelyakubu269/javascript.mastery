@@ -10,3 +10,7 @@ const StartTimer=()=> {
    secondsElapsed++
    setTime()
 }
+const start=()=>{
+    intervaL= setInterval(StartTimer,1000)
+    
+}
