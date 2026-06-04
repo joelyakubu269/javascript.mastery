@@ -10,6 +10,28 @@ font-size: large;
     align-items: center;
     justify-content: space-between;
 }
+.message{
+    align-items: center;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 200;
+font-size: large;
+font-style: italic;
+}
 #blue{
-    
+    border: 5px;
+    border-radius: 20%;
+    margin: 20px;
+    color: blue;
+}
+#red{
+    border: 5px;
+    border-radius: 20%;
+    margin: 20px;
+    color: red;
+}
+#green{
+    border: 5px;
+    border-radius: 20%;
+    margin: 20px;
+    color: green;
 }
