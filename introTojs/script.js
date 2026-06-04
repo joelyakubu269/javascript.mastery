@@ -105,8 +105,21 @@ const Spin= ()=> {
         }
         return rows
     }
- const val= Spin()
- console.log(val)
+    const printRows=(rows)=> {
+        let rowString= ""
+        for(const[i,symbol] of rows.entries()) {
+            rowString+= symbol
+            if(i!= rows.length -1) {
+                rowString+= "|"
+            }
+
+        }
+        return rowString
+    }
+ const reels= Spin()
+ const rows = transpose(reels)
+ console.log(reels)
+ console.log(rows)
 
 let balance = AmountDeposited()
 const bet = CollectBetAmount(balance)
