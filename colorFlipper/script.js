@@ -8,4 +8,5 @@ const random=()=>{
     const randomIdx = Math.floor(Math.random() * buffer.length)
     const name = buffer[randomIdx]
     buffer.slice(randomIdx,1)
+    body.style.backgroundColor= name
 }
