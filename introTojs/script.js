@@ -5,6 +5,12 @@ const Symbol_Count= {
     D: 8
 
 }
+const Symbol_values= {
+    A : 5,
+    B : 4,
+    C : 3,
+    D : 2
+}
 const prompt = require("prompt-sync")()
 const getInput=(message)=> {
  const input = prompt(message)
