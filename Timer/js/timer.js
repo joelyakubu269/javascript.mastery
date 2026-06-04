@@ -28,5 +28,7 @@ const stop=()=>{
 }
 const Reset=()=> {
     clearInterval(intervaL)
-    setTime()
+    intervaL= null
+    secondsElapsed= 0
+    updateDisplay()
 }
