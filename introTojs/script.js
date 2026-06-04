@@ -72,9 +72,11 @@ const CollectBetAmount=(balance)=> {
 }
 }
 const Spin= ()=> {
-    symbol= []
-    for(symbol,count of Object.entries(Symbol_Count)) {
-        console.log(symbol,count)
+    symbols= [] // serves as a storage for the symbols
+    for( const [symbol,count] of Object.entries(Symbol_Count)) {
+        for(let i=0; i< count; i++) {
+            symbol.push(symbol)
+        }
     }
 }
  Spin()
