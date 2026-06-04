@@ -1,1 +1,6 @@
-console.log("Hello world");
+const prompt = require("prompt-sync")()
+const AmountDeposited=(number)=> {
+    number= parseFloat(number)
+    
+
+}
