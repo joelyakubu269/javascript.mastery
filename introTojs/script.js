@@ -12,6 +12,13 @@ const AmountDeposited=()=> {
      
 }
 console.log(AmountDeposited())
+const getInput=(message)=> {
+ const input = message
+ if (input.toLowerCase()==="quit" || input.toLowerCase()==="exit") {
+    process.Exit(0)
+ }
+ return message
+}
 const CollectBetAmount=(lines,Amount)=> {
     while(true) {
          const linesInput= prompt("please enter the number of lines you wish to bet on(q to quit): ")
