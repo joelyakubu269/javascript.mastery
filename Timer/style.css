@@ -32,10 +32,40 @@ body{
 .buttons button {
     border-radius: 5px;
     font-size: large;
-    font-weight: 200;
-
-    background-color: black;
-    color: white;
-
+    font-weight: bold;
     padding: 10px 20px;
+}
+/* Start button */
+#start {
+    background-color: #22c55e; /* green */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#start:hover {
+    background-color: #16a34a; /* slightly darker green */
+}
+
+/* Stop button */
+#stop {
+    background-color: #ef4444; /* red */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#stop:hover {
+    background-color: #b91c1c; /* slightly darker red */
+}
+
+/* Reset button */
+#reset {
+    background-color: #3b82f6; /* blue */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+#reset:hover {
+    background-color: #1e40af; /* slightly darker blue */
+}
+
+/* Optional: change cursor on hover */
+button:hover {
+    cursor: pointer;
 }
