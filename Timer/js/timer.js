@@ -11,7 +11,7 @@ const setTime=()=>{
 const StartTimer=()=> {
    secondsElapsed++
    setTime()
-   
+   time.textContent= setTime()
 }
 const start=()=>{
     intervaL= setInterval(StartTimer,1000)
