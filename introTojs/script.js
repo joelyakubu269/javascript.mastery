@@ -13,9 +13,9 @@ const AmountDeposited=()=> {
 }
 console.log(AmountDeposited())
 const getInput=(message)=> {
- const input = message
+ const input = prompt(message)
  if (input.toLowerCase()==="quit" || input.toLowerCase()==="exit") {
-    process.Exit(0)
+    process.exit(0)
  }
  return message
 }
