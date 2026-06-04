@@ -84,8 +84,8 @@ const Spin= ()=> {
     for (let i=0; i< COL;i++) {
         for(let j= 0; j< ROW; j++) {
         const randomIdx = Math.floor(Math.random() * reels_Symbols.length)
-        const arrCol = reels_Symbols[randomIdx]
-        reels.push(arrCol)
+        const selected_Symbol = reels_Symbols[randomIdx]
+        reels.push(selected_Symbol)
         reels_Symbols.splice(randomIdx,1)
 
         }
