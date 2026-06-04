@@ -14,9 +14,30 @@ const AmountDeposited=()=> {
 console.log(AmountDeposited())
 const CollectBetAmount=(lines,Amount)=> {
     while(true) {
-         lines= prompt("please enter the number of lines you wish to bet on: ")
-    Amount= prompt("enter how much you wish to bet on each line: ")
-    if (isNaN(lines && Amount) || lines<= 0 || Amount<= 0)
-    cost= lines * Amount
+         const linesInput= prompt("please enter the number of lines you wish to bet on(q to quit): ")
+          if (linesInput.toLowerCase() === "q") {
+            console.log("exiting...");
+            process.exit(0);
+        }
+        const lines = parseInt(linesInput)
+          if (isNaN(lines) || lines <= 0) {
+        console.log("invalid amount try again")
+        continue
+    }
+    const Amount= parseFloat(prompt("enter how much you wish to bet on each line: "))
+
+        // if (lines.toLowerCase() === "q") {
+        //     process.exit(0);
+        // }
+    if ( isNaN(Amount) || Amount<= 0) {
+         console.log("invalid amount try again")
+        continue
+    }
+    else {
+        const cost= lines * Amount
+        return cost
+    }
+    
     }
 }
+console.log(CollectBetAmount())
