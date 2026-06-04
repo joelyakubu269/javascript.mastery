@@ -10,7 +10,7 @@ const AmountDeposited=()=> {
     let number 
     while(true) {
             number= getInput(("please enter the amount to be deposited: "))
-            number1= parseFloat(number)
+           const number1= parseFloat(number)
         if (isNaN(number1) || number1 <= 0) {
             console.log("invalid input try again")
             continue
@@ -22,6 +22,7 @@ const AmountDeposited=()=> {
 }
 
 const CollectBetAmount=(balance)=> {
+    let lines
     while(true) {
          const linesInput= getInput("please enter the number of lines you wish to bet on(q to quit): ")
           
@@ -30,6 +31,8 @@ const CollectBetAmount=(balance)=> {
         console.log("invalid amount try again")
         continue
     }
+
+    while(true) {
     const Bet= parseFloat(prompt("enter how much you wish to bet on each line: "))
 
         // if (lines.toLowerCase() === "q") {
@@ -38,8 +41,7 @@ const CollectBetAmount=(balance)=> {
     if ( isNaN(Bet) || Bet<= 0) {
          console.log("invalid amount try again")
         continue
-    }
-    else if (Bet> balance/ lines){
+    }else if (Bet> balance/ lines){
         console.log("not enough balance try again")
         continue
     }else {
@@ -49,5 +51,8 @@ const CollectBetAmount=(balance)=> {
     
     }
 }
+}
+
 let balance = AmountDeposited()
 const bet = CollectBetAmount(balance)
+console.log(bet)
