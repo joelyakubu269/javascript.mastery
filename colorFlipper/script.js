@@ -1,6 +1,19 @@
 const body = document.getElementsByTagName("body")[0]
+const myMessage= document.getElementById("message")
 const change=(name)=> {
-    body.style.backgroundColor= name
+    if (name==="red") {
+        myMessage.innerHTML= "she showed you the flags bruv, but you still went ahead"
+         body.style.backgroundColor= name
+    }
+    if (name==="blue") {
+        myMessage.innerHTML= "the sky is blue"
+         body.style.backgroundColor= name
+    }
+    if (name==="green") {
+        myMessage.innerHTML= "Go into the absyss, there is light somewhere, may not be much light but it beats the darkness"
+         body.style.backgroundColor= name
+    }
+   
 }
  const colArray= ["red","blue","green","yellow","black","white","grey","#FF6B6B","#4ECDC4",
   "#45B7D1",
