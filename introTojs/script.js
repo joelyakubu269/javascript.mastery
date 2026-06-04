@@ -1,17 +1,4 @@
 const prompt = require("prompt-sync")()
-const AmountDeposited=()=> {
-    let number 
-    while(true) {
-            number= parseFloat(prompt("please enter the amount to be deposited: "))
-        if (isNaN(number) || number <= 0) {
-            console.log("invalid input try again")
-        }else{
-            return number
-        }
-    }
-     
-}
-console.log(AmountDeposited())
 const getInput=(message)=> {
  const input = prompt(message)
  if (input.toLowerCase()==="quit" || input.toLowerCase()==="exit") {
@@ -19,6 +6,20 @@ const getInput=(message)=> {
  }
  return input
 }
+const AmountDeposited=()=> {
+    let number 
+    while(true) {
+            number= getInput(prompt("please enter the amount to be deposited: "))
+            number1= parseFloat(number)
+        if (isNaN(number1) || number1 <= 0) {
+            console.log("invalid input try again")
+        }else{
+            return number1
+        }
+    }
+     
+}
+console.log(AmountDeposited())
 const CollectBetAmount=(lines,Amount)=> {
     while(true) {
          const linesInput= getInput("please enter the number of lines you wish to bet on(q to quit): ")
