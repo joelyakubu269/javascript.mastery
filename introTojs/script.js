@@ -1,5 +1,10 @@
+
+
+const prompt = require("prompt-sync")()
+const ROW = 3
+const COL = 3
 const Symbol_Count= {
-    A : 2,
+    A : 2,  // notice there are not quotes and this is valid syntax because there is no space in the key
     B : 4,
     C : 6,
     D: 8
@@ -11,7 +16,7 @@ const Symbol_values= {
     C : 3,
     D : 2
 }
-const prompt = require("prompt-sync")()
+//const symbol_Arr= 
 const getInput=(message)=> {
  const input = prompt(message)
  if (input.toLowerCase()==="quit" || input.toLowerCase()==="exit") {
@@ -66,6 +71,13 @@ const CollectBetAmount=(balance)=> {
     }
 }
 }
+const Spin= ()=> {
+    symbol= []
+    for(symbol,count of Object.entries(Symbol_Count)) {
+        console.log(symbol,count)
+    }
+}
+ Spin()
 
 let balance = AmountDeposited()
 const bet = CollectBetAmount(balance)
