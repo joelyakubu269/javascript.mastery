@@ -17,15 +17,12 @@ const getInput=(message)=> {
  if (input.toLowerCase()==="quit" || input.toLowerCase()==="exit") {
     process.exit(0)
  }
- return message
+ return input
 }
 const CollectBetAmount=(lines,Amount)=> {
     while(true) {
-         const linesInput= prompt("please enter the number of lines you wish to bet on(q to quit): ")
-          if (linesInput.toLowerCase() === "q") {
-            console.log("exiting...");
-            process.exit(0);
-        }
+         const linesInput= getInput("please enter the number of lines you wish to bet on(q to quit): ")
+          
         const lines = parseInt(linesInput)
           if (isNaN(lines) || lines <= 0) {
         console.log("invalid amount try again")
