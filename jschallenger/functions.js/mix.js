@@ -2,4 +2,4 @@ const mix = (mood) => {
     return mood + "Mix"
 }
 result = mix("happy")
-console.log(result
+console.log(result)
