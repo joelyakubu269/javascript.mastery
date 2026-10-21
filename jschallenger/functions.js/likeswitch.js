@@ -5,11 +5,13 @@ function like(names) {
         case 0:
             return 'no one likes this'
         case 1:
-            return '${a} likes this'
+            return `'${a} likes this`
         case 2:
-            return '${a} and ${b} like this'
+            return `${a} and ${b} like this`
         case 3:
-            return '${a}, ${b} and {n-2} like this'
+            return `${a}, ${b} and ${c} like this`
+        default:
+            return `${a}, ${b} and ${n-2} others like this`
     }
 }
 result = like(["joel", "joan", "josiah", "joseph"])
