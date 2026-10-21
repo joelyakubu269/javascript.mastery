@@ -22,5 +22,3 @@ return message
  }
     
 }
-res = likes(["john", "doe", "mimi", "peter"])
-console.log(res)
