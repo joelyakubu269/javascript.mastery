@@ -66,3 +66,4 @@ console.log(createGreeting('John', 'Doe', 'night'));
 1. **Logical `&&` Over `||`:** The code correctly utilizes standard logical AND validation to prevent false-positive error triggers.
 2. **Arrow Functions:** Uses modern ES6 syntax for clean, concise function declarations.
 3. **Template Literals:** Combines string variables gracefully without messy concatenation blocks.
+https://roadmap.sh/projects/js-greeting-builder
