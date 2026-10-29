@@ -4,7 +4,7 @@ A simple, modular JavaScript program that validates the time of day, formats use
 
 ## 🔗 Project Links
 
-- **Project url:** https://roadmap.sh/projects/js-greeting-builder
+- **Project url:** https://github.com/joelyakubu269/javascript.mastery/blob/main/GreetingBuilder.js
 
 
 ## Features
