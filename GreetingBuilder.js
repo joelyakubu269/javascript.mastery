@@ -1,6 +1,6 @@
 
 let formatName=(firstName, lastName)=> {
-    newName= `${firstName}, + " " ,${lastName}`
+    newName= `${firstName} ${lastName}`
     return newName
 }
 let getGreeting=(timeOfDay)=> {
@@ -10,7 +10,7 @@ let getGreeting=(timeOfDay)=> {
 let createGreeting=(firstName,lastName,timeOfDay)=>{
     greet= getGreeting(timeOfDay)
     newN= formatName(firstName,lastName)
-    return `${greet}, ${lastName}`
+    return `${greet}, ${newN}`
 }
 console.log(createGreeting('Ava', 'Stone', 'morning'));
 console.log(createGreeting('Noah', 'Kim', 'evening'));
