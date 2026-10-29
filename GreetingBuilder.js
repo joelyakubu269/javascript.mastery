@@ -8,6 +8,9 @@ let getGreeting=(timeOfDay)=> {
 }
 
 let createGreeting=(firstName,lastName,timeOfDay)=>{
+    if (timeOfDay != "morning" && timeOfDay!="afternoon" && timeOfDay != "evening") {
+        return "not a valid time of day"
+    }
     greet= getGreeting(timeOfDay)
     newN= formatName(firstName,lastName)
     return `${greet}, ${newN}`
