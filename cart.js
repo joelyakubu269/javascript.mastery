@@ -20,7 +20,7 @@ let calculateDiscount=(subtotal, discountPercent)=>{
     const discount= calculateDiscount(subtotal,discountPercent)
     const amountAfterDiscount= subtotal- discount
     const tax = calculateTax(amountAfterDiscount,taxPercent)
-    const total= subtotal + discount
+    const total= (subtotal - discount) + tax
     const cartSum= {
         subtotal: subtotal,
         discount: discount,
