@@ -5,6 +5,7 @@ Project URL: https://roadmap.sh/projects/js-number-checker
 
 A simple JavaScript project that checks the properties of a number entered by the user.
 
+
 ## Features
 
 -How to Run the Program
