@@ -1,4 +1,4 @@
-project url : https://roadmap.sh/projects/js-number-checker
+https://roadmap.sh/projects/js-number-checker
 How to Run the Program
 
 Follow these steps to run the Number Checker program on your local machine.
