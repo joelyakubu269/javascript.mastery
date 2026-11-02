@@ -1,5 +1,13 @@
-https://roadmap.sh/projects/js-number-checker
-How to Run the Program
+# number-checker
+Project URL: https://roadmap.sh/projects/js-number-checker
+
+# Number Checker
+
+A simple JavaScript project that checks the properties of a number entered by the user.
+
+## Features
+
+-How to Run the Program
 
 Follow these steps to run the Number Checker program on your local machine.
 
