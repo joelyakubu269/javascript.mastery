@@ -7,5 +7,9 @@ let filterByMaxPrice=(products, maxPrice)=>{
     return prods
 }
 let getInStockProducts=(products)=>{
+    let prods= products.filter(product=>product.inStock == true)
+    return prods
+}
+let findProductById=(products, productId)=>{
     
 }
