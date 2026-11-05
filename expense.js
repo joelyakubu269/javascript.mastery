@@ -23,3 +23,11 @@ let findLargestExpense=(expenses)=>{
     }
     return largestExpense
 }
+let createExpenseSummary=(expenses)=>{
+    const summary = {
+        total:
+        foodTotal:
+        transportTotal:
+        largestExpense:
+    }
+}
