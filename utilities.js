@@ -27,3 +27,11 @@ let idGen=(tasks)=>{
         }
         return tasks
     }
+    let removeTask=(tasks, taskId)=>{
+        let tazks= []
+        for (task of tasks) {
+            if (task.id != taskId){
+                tazks.append(task.id)
+            }
+        }
+    }
