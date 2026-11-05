@@ -24,6 +24,10 @@ let findLargestExpense=(expenses)=>{
     return largestExpense
 }
 let createExpenseSummary=(expenses)=>{
+    let total= calculateTotal(expenses)
+    let foodTotal= calculateCategoryTotal(expenses,"food")
+    let transportTotal= calculateCategoryTotal(expenses,"transport")
+    let largestExpense= findLargestExpense(expenses)
     const summary = {
         total:
         foodTotal:
