@@ -5,6 +5,9 @@ let idGen=(Tasks)=>{
         return 1
     }
     for (task of Tasks){
-        
+        if (highestid< task.id){
+            highestid= task.id
+        }
     }
+    highestid++
 }
