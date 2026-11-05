@@ -44,4 +44,9 @@ let createGradeReport=(name, score)=>{
         feedback: remark,
 
     }
+    return reportCard;
 }
+console.table(createGradeReport('Ava', 92));
+console.table(createGradeReport('Noah', 48));
+console.table(createGradeReport('Mina', 75));
+console.table(createGradeReport('Sam', 60));
