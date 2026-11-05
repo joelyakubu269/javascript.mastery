@@ -11,3 +11,9 @@ let getLetterGrade=(score)=>{
     return "F";
   }
 }
+let hasPassed=(score)=>{
+    return score>=60
+}
+let getFeedback=(grade)=>{
+    
+}
