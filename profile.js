@@ -1,5 +1,5 @@
 let getDisplayName=(user)=>{
-    return `${user.firstname} ${user.lastname}`
+    return `${user.firstName} ${user.lastName}`
 }
 let getLocation=(user)=>{
     return user.address
@@ -12,7 +12,7 @@ let getContactSummary=(user)=>{
     return obj
 }
 let isAccountActive=(user)=>{
-    return (isAccountActive.status === 'active')
+    return (user.account.status === 'active')
 }
 let createProfileSummary=(user)=>{
     let displayName = getDisplayName(user)
@@ -29,3 +29,23 @@ let createProfileSummary=(user)=>{
     }
     return summary
 }
+const user = {
+  id: 42,
+  firstName: 'Ava',
+  lastName: 'Stone',
+  email: 'ava@example.com',
+  phone: null,
+  address: {
+    city: 'London',
+    country: 'UK',
+  },
+  account: {
+    status: 'active',
+    plan: 'pro',
+  },
+};
+
+console.log(createProfileSummary(user));
+console.log(getDisplayName(user));
+console.log(isAccountActive(user));
+console.log(getContactSummary(user));
