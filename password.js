@@ -4,3 +4,6 @@ let hasMinimumLength=(password)=>{
     }
     return false
 }
+let hasNumber=(password)=>{
+    return [...password].some(char=>"0123456789".includes(char));
+}
