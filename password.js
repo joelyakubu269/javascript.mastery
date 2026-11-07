@@ -26,5 +26,12 @@ let getFailedRules=(password)=>{
             failed.push("has uppercase letters")
 
         }
-        return failed.push
+        return failed;
+}
+let validatePassword = (password) => {
+    const failedRules = getFailedRules(password);
+  return {
+    valid: failedRules.length === 0,
+    failedRules,
+  };
 }
