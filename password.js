@@ -1,6 +1,6 @@
 let hasMinimumLength=(password)=>{
-    if (password.length != 8) {
-        return false 
+    if (password.length === 8) {
+        return true
     }
-    return true
+    return false
 }
