@@ -3,9 +3,9 @@ let conti =["Welcome to our platform! We provide simple and effective tools to h
     "Our platform offers powerful features such as link tracking, custom URLs, secure sharing, real-time analytics, and easy integration with your favourite applications",
     "Have questions or need assistance? Our support team is always available to help. Reach out to us through email or our social media channels, and we will be happy to assist you"
 ];
-    const 
-let display=()=>{
-    const disp= document.getElementsByClassName("tabs")
-    disp.textContent= conti[0]
+    const content = document.querySelector(".content")
+let display=(element)=>{
+    let tabIndex= element.getAttribute("data-tab")
+    content.textContent= conti[tabIndex];
 
-}
+};
