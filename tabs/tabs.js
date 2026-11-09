@@ -9,3 +9,4 @@ let display=(element)=>{
     content.textContent= conti[tabIndex];
 
 };
+display(tabs[0]);
