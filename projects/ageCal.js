@@ -1,0 +1,1 @@
+const birthYear= prompt("What year were you born?:");
