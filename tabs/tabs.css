@@ -5,7 +5,11 @@ header p {
 
 body {
     font-family: Arial, sans-serif;
+    border: 2px solid #333;
+    border-radius: 20px;
     padding: 20px;
+    min-height: 100vh;
+
 }
 
 ul{
@@ -20,7 +24,7 @@ ul{
         padding-bottom: 10px;
         &:hover{
             color: black;
-            border-bottom: 2px solid black;;
+            border-bottom: 2px solid black;
         }
     }
 }
