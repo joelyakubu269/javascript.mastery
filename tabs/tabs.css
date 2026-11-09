@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    background-color: white;
+}
+nav{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+}
