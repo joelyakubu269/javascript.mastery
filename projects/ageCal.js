@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')({ sigint: true });
+
 const birthYear= prompt("What year were you born?:");
     if (birthYear === null) {
         console.log("user cancelled the prompt")
