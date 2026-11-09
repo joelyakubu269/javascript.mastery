@@ -5,9 +5,11 @@ const birthYear= prompt("What year were you born?:");
         console.log("your birthyear cannot be empty")
     }else {
         let age = Number(birthYear)
-        if (age ===isNaN) {
+        if (isNaN(age)) {
             console.log("age has to be a number")
+        }else {
+            let newAGE= 2026 - age
+            console.log(`you are ${newAGE} years old`)
         }
-        let newAGE= 2026 - age
-        console.log(`you are ${newAGE} years old`)
+        
     }
