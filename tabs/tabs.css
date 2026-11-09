@@ -1,16 +1,21 @@
-*{
-    margin: 0;
-    background-color: white;
+header p {
+    font-size: 22px;
+    line-height: 1.5;
 }
-nav{
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    max-width: 50%;
-}
-.tabs{
- border: 20px solid black;
- color: white;
- text-align: center;
 
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+.content{
+ border: 20px solid black;
+ color: red
 }
