@@ -20,7 +20,15 @@
 
     <script>
         const links = document.querySelectorAll("a")
-        
+        links.forEach(link=>{
+            link.addEventListener("click",(event)=>{
+                event.preventDefault();
+                const answer= confirm(`Are you sure you want to delete ${link.textContent}`)
+                if (answer) {
+                    const listItem= 
+                }
+            })
+        })
     </script>
 </body>
 </html>
