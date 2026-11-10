@@ -35,9 +35,8 @@
     const inputArea= document.querySelector("textarea")
     let liveCount= inputArea.value.length
     let val = `${liveCount}/255`
-    let score= livecount/255
-    if(score === 1) {
-        inputArea.style.backgroundColor= red
+    if(livescore>= 255) {
+        inputArea.style.backgroundColor= "red"
     }
 </script>
 </body>
