@@ -29,15 +29,16 @@
         <button>submit</button>
     </header>
     <script>
+         const val = document.getElementById("task")
         const mybtn = document.querySelector("button")
         mybtn.addEventListener("click",(event)=>{
-            event.preventDefault()
-        })
-        const val = document.getElementById("task")
-        let task = val.textContent
+            event.preventDefault();
+            let task = val.value
         const list = document.createElement("li")
         list.textContent= task
         document.body.appendChild("list")
+        })
+        
     </script>
 </body>
 </html>
