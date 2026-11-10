@@ -8,13 +8,21 @@
        body {
     background-color: white;
     border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
     min-height: 100vh;
   }
 
   dialog {
     border: none;
-    margin: auto;
-    top: 20px;
+    position: fixed;
+    margin: 0;
+    width: 300px;
+  min-height: 340px;
+  padding: 25px;
+  bottom: 20px;
+  left: auto;
+  right: 20px;
   }
 
   dialog[open] {
@@ -22,7 +30,8 @@
     flex-direction: column;
     background-color: black;
     border: 4px solid black;
-    border-radius: 2px;
+    min-height: 20vh;
+    border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     & #cookies {
@@ -34,7 +43,7 @@
         display: flex;
         border: 4px solid white;
         border-radius: 2px;
-        min-height: 15vh;
+        min-height: 5vh;
         color: black;
         background-color: white;
           justify-content: center;
