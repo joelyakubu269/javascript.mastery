@@ -20,12 +20,22 @@
   dialog[open] {
     display: flex;
     flex-direction: column;
+    background-color: black;
+    border: 4px solid black;
+    border-radius: 2px;
     justify-content: space-between;
     align-items: center;
     & #cookies {
         font-size: larger;
         font-style: italic;
         color: white;
+    }
+    & #like{
+        border: 4px solid white;
+        border-radius: 2px;
+        min-height: 20vh;
+        align-items: centre;
+        text-align: centre;
     }
   }
     </style>
@@ -35,7 +45,7 @@
         <div id="container">
             <p></p>
             <p id="cookies">We use cookies to improve your experinece</p>
-            <p>i like cookies</p>
+            <p id="like">i like cookies</p>
         </div>
         <form method="dialog">
             <button>Accept</button>
