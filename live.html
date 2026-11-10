@@ -35,11 +35,12 @@
 <script>
     const inputArea= document.querySelector("textarea")
     const counter = document.querySelector("#counter")
-        let existingWarning = document.querySelector(".limit-warning");
 
     
     inputArea.addEventListener("input",()=>{
         let liveCount= inputArea.value.length
+    let existingWarning = document.querySelector(".limit-warning");
+
         let val = `${liveCount}/255`
         counter.textContent= val
         if(liveCount>= 255) {
@@ -49,14 +50,14 @@
             text.className= "limit-warning"
         text.textContent= "255 character limit is exceeded"
         document.body.appendChild(text)
-        }else {
+        }
+        
+    }else {
             inputArea.style.backgroundColor= "";
             if (existingWarning){
                 existingWarning.remove();
             }
         }
-        
-    }
     })
 </script>
 </body>
