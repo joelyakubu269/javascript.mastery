@@ -25,7 +25,8 @@
                 event.preventDefault();
                 const answer= confirm(`Are you sure you want to delete ${link.textContent}`)
                 if (answer) {
-                    const listItem= 
+                    const listItem = link.closest("li")
+                    listItem.remove();
                 }
             })
         })
