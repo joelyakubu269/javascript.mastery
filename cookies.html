@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dialogues in javascript</title>
     <style>
-        body{
-            background-color: white;
-            border: 2px solid black;
-            min-height: 100vh;
-        }
+       body {
+    background-color: white;
+    border: 2px solid black;
+    min-height: 100vh;
+  }
+
+  dialog {
+    border: none;
+    margin: auto;
+    top: 20px;
+  }
+
+  dialog[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+    </style>
+</head>
+<body>
+    <dialog id="mydialogue">
+        <div id="container">
+            <p></p>
+            <p>We use cookies to improve your experinece</p>
+            <p>i like cookies</p>
+        </div>
+    </dialog>
+    
+</body>
+</html>
         dialog{
             display: flex;
             flex-direction: column;
