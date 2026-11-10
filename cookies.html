@@ -13,65 +13,89 @@
     min-height: 100vh;
   }
 
-  dialog {
-    border: none;
-    position: fixed;
-    margin: 0;
-    width: 300px;
-  min-height: 340px;
-  padding: 25px;
-  bottom: 20px;
-  left: auto;
-  right: 20px;
-  }
+ dialog {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            margin: 0;
+            width: 300px;
+            min-height: 340px;
+            padding: 25px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
 
-  dialog[open] {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    border: 4px solid black;
-    min-height: 20vh;
-    border-radius: 10px;
-    justify-content: space-between;
-    align-items: center;
-    & #container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    gap: 20px;
-}
-    & #cookies {
-        font-size: larger;
-        font-style: italic;
-        color: white;
-    }
-    & #like{
-        display: flex;
-        border: 4px solid white;
-        border-radius: 2px;
-        min-height: 5vh;
-        color: black;
-        background-color: white;
-          justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-  }
+            & #container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                gap: 20px;
+            }
+
+            & #cookie-icon {
+                font-size: 40px;
+            }
+
+            & #cookies {
+                font-size: 22px;
+            }
+
+            & button {
+                width: 100%;
+                padding: 15px;
+                border: none;
+                border-radius: 12px;
+                background-color: white;
+                color: black;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            & #close {
+                width: auto;
+                padding: 0;
+                background: transparent;
+                color: white;
+                align-self: flex-end;
+                font-size: 24px;
+            }
+        }
+
+        dialog::backdrop {
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+
+  
     </style>
 </head>
 <body>
-    <dialog id="mydialogue" open>
+   <dialog id="mydialogue">
         <div id="container">
-            <p></p>
-            <p id="cookies">We use cookies to improve your experinece</p>
-            <p id="like">i like cookies</p>
+
+            <form method="dialog">
+                <button id="close" aria-label="Close">&times;</button>
+            </form>
+
+            <p id="cookie-icon">🍪</p>
+
+            <p id="cookies">
+                We use cookies to improve your user experience.
+            </p>
+
+            <form method="dialog">
+                <button value="accepted">I like Cookies</button>
+            </form>
+
         </div>
-        <form method="dialog">
-            <button>Accept</button>
-        </form>
     </dialog>
-    
+     <script>
+        const popup = document.querySelector("#mydialogue");
+
+        popup.showModal();
+    </script>
 </body>
 
 </html>
