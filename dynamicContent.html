@@ -29,6 +29,10 @@
         <button>submit</button>
     </header>
     <script>
+        const mybtn = document.querySelector("button")
+        mybtn.addEventListener("click",(event)=>{
+            event.preventDefault()
+        })
         const val = document.getElementById("task")
         let task = val.textContent
         const list = document.createElement("li")
