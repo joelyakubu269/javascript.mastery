@@ -15,6 +15,9 @@ questions.forEach((question)=>{
         if (anyOpenAnswer){
             anyOpenAnswer.remove()
         }
+        if (alreadyOpen){
+            
+        }
     })
 }
 )
