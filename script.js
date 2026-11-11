@@ -7,5 +7,10 @@ let answers = [
     "Yes, thanks to the global developer community, it ranks among the top 10 most-starred repositories on GitHub."
 ];
 const questions = document.querySelectorAll('#container p');
-questions.forEach()
+questions.forEach((question)=>{
+    question.addEventListener('click',(event)=>{
+        let existing= 
+    })
+}
+)
 
