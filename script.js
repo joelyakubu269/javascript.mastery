@@ -7,13 +7,5 @@ let answers = [
     "Yes, thanks to the global developer community, it ranks among the top 10 most-starred repositories on GitHub."
 ];
 const questions = document.querySelectorAll('#container p');
-questions.forEach('click',(event)=>{
-    
-        let tabIndex = event.currentTarget.getAttribute('data-index');
-        
-        let answer = document.createElement("p")
-        answer.className= ".ansa"
-        answer.textContent= answers[tabIndex]
-
-    })
+questions.forEach()
 
