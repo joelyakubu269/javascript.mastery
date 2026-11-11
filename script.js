@@ -11,6 +11,10 @@ questions.forEach((question)=>{
     question.addEventListener('click',(event)=>{
         let existing= question.nextElementSibling
         let alreadyOpen= existing && existing.classList.contains('ansa')
+        let anyOpenAnswer= document.querySelector('.ansa')
+        if (anyOpenAnswer){
+            anyOpenAnswer.remove()
+        }
     })
 }
 )
