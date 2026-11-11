@@ -16,8 +16,11 @@ questions.forEach((question)=>{
             anyOpenAnswer.remove()
         }
         if (alreadyOpen){
-            
+            return
         }
+        let tabIndex= event.currentTarget.getAttribute('data-index')
+        let val= document.createElement(".p")
+        
     })
 }
 )
