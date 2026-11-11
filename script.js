@@ -9,7 +9,8 @@ let answers = [
 const questions = document.querySelectorAll('#container p');
 questions.forEach((question)=>{
     question.addEventListener('click',(event)=>{
-        let existing= 
+        let existing= question.nextElementSibling
+        let alreadyOpen= existing && existing.classList.contains('ansa')
     })
 }
 )
