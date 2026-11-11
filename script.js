@@ -22,6 +22,7 @@ questions.forEach((question)=>{
         let val= document.createElement(".p")
         val.className="ansa"
         val.textContent= answers[tabIndex]
+        question.after(val)
     })
 }
 )
