@@ -6,4 +6,14 @@ let answers = [
     "You can sign up for a free account on the site and use the built-in visual roadmap editor to build and share your own paths.",
     "Yes, thanks to the global developer community, it ranks among the top 10 most-starred repositories on GitHub."
 ];
+const questions = document.querySelectorAll('#container p');
+questions.forEach('click',(event)=>{
+    
+        let tabIndex = event.currentTarget.getAttribute('data-index');
+        
+        let answer = document.createElement("p")
+        answer.className= ".ansa"
+        answer.textContent= answers[tabIndex]
+
+    })
 
