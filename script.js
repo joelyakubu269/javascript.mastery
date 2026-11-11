@@ -20,7 +20,8 @@ questions.forEach((question)=>{
         }
         let tabIndex= event.currentTarget.getAttribute('data-index')
         let val= document.createElement(".p")
-        
+        val.className="ansa"
+        val.textContent= answers[tabIndex]
     })
 }
 )
