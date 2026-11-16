@@ -47,10 +47,12 @@
 <body>
     <script>
         const mybtn= document.querySelector("button")
-        const age= document.querySelector("input")
-        const ageVal= age.value.year
+        const dateInput= document.querySelector("input")
+        const resultText = document.querySelector("#result");
+
         mybtn.addEventListener("click",()=>{
-            const years= 2026- ageVal
+            const today= new date()
+            
             const displayAge= document.createElement("p")
             displayAge.textContent= years
             mybtn.after(displayAge)
