@@ -46,7 +46,12 @@
     <script>
         const mybtn= document.querySelector("button")
         const age= document.querySelector("input")
-        const ageVal= age.value
+        const ageVal= age.value.year
+        mybtn.addEventListener("click",()=>{
+            const years= 2026- ageVal
+            const displayAge= document.createElement("p")
+            displayAge.textContent= years
+        })
 
     </script>
 </body>
