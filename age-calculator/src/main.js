@@ -15,4 +15,8 @@ form.addEventListener("submit",(event)=>{
   event.preventDefault()
   const birthDate = DateTime.fromISO(dateInput.value);
   const now = DateTime.now();
+  if (!birthDate.isValid || birthDate>now) {
+    resultText.textContent = 'Please select a valid birthdate in the past.';
+    return;
+  }
 })
