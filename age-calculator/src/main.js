@@ -13,5 +13,6 @@ flatpickr(dateInput,{
 })
 form.addEventListener("submit",(event)=>{
   event.preventDefault()
-  
+  const birthDate = DateTime.fromISO(dateInput.value);
+  const now = DateTime.now();
 })
