@@ -19,4 +19,6 @@ form.addEventListener("submit",(event)=>{
     resultText.textContent = 'Please select a valid birthdate in the past.';
     return;
   }
+    const diff = now.diff(birthDate, ['years', 'months', 'days']).toObject();
+
 })
