@@ -23,5 +23,6 @@ form.addEventListener("submit",(event)=>{
   const years = Math.floor(diff.years);
   const months = Math.floor(diff.months);
   const days = Math.floor(diff.days);
+    resultText.textContent = `You are ${years} years, ${months} months, and ${days} days old.`;
 
 })
