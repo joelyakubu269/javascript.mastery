@@ -3,4 +3,6 @@ import { DateTime } from 'luxon';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
-const 
+const form = document.querySelector('#age-form');
+const dateInput = document.querySelector('#birthdate');
+const resultText = document.querySelector('#result');
