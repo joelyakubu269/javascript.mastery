@@ -16,9 +16,11 @@
             align-items: center;
             justify-content: center;
             
-            text-align: center;
-            & p {
-                justify-content: baseline;
+            
+            & input {
+
+                text-align: start;
+                width: 190px;
             }
             
         }
@@ -28,6 +30,7 @@
             color: white;
             border: 2px solid white;
             border-radius: 10px;
+            text-align: center;
         }
         
             
@@ -36,7 +39,7 @@
 <h1>Age Calculator</h1>
 <div class="container">
     <p>Enter your birth date</p>
-    <input type="text" placeholder="21/11/2002">
+    <input type="date" max="2026-11-21" value="2002-11-21">
     <button>Calculate</button>
 </div>
 <body>
