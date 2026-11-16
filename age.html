@@ -49,13 +49,17 @@
         const mybtn= document.querySelector("button")
         const dateInput= document.querySelector("input")
         const resultText = document.querySelector("#result");
-
+                const today= new date()    
+            dateInput.max= today.toISOString().split("T")[0]
         mybtn.addEventListener("click",()=>{
-            const today= new date()
+            if (!dateInput.value){
+                resultText.textContent = "Please select a valid date.";
+                return;
+            }
             
-            const displayAge= document.createElement("p")
-            displayAge.textContent= years
-            mybtn.after(displayAge)
+            const birthDay= new date(dateInput.value)
+            let age = today.getFullYear() - birthDay.getFullYear()
+            resultText.textContent= `you are ${age} years old` 
         })
 
     </script>
