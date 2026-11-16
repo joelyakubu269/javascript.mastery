@@ -20,5 +20,8 @@ form.addEventListener("submit",(event)=>{
     return;
   }
     const diff = now.diff(birthDate, ['years', 'months', 'days']).toObject();
+  const years = Math.floor(diff.years);
+  const months = Math.floor(diff.months);
+  const days = Math.floor(diff.days);
 
 })
