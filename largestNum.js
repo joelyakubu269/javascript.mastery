@@ -6,4 +6,5 @@ let largestNum=(list)=>{
             max= list[i]
         }
     }
+    return max
 }
