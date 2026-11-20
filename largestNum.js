@@ -1,7 +1,7 @@
-lizt= [3,41,56,21,76,9]
-let largestNum=(list)=>{
+const lizt= [3,41,56,21,76,9]
+const largestNum=(list)=>{
     let max= list[0]
-    for ( i=0; i<list.length;i++){
+    for ( let i=1; i<list.length;i++){
         if (list[i]>max){
             max= list[i]
         }
