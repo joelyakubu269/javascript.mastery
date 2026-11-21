@@ -9,5 +9,5 @@ const smallNum=(numbers)=>{
             min= numbers[i]
         }
     }
-    
+    return min
 }
