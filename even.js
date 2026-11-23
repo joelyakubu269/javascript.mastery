@@ -1,1 +1,3 @@
-const count_even(numbers) 
+const count_even=(numbers)=>{
+    
+}
