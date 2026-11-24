@@ -6,3 +6,6 @@ const find_number=(numbers, target)=>{
     }
     return -1
 }
+console.log(find_number([10, 25, 30, 45],30))
+console.log(find_number([5, 8, 5, 9],5))
+conso
