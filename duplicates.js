@@ -4,6 +4,13 @@ const has_duplicates=(numbers)=>{
             if (i==j){
                 continue
             }
+            if (numbers[i]==numbers[j]){
+                return true
+            }
         }
+        return false
     }
 }
+console.log(has_duplicates([1, 2, 3, 2]
+))
+console.log(has_duplicates([1, 2, 3, 4]))
