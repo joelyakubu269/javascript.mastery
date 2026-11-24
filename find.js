@@ -1,5 +1,5 @@
 const find_number=(numbers, target)=>{
-    for (let i=0; i< length.numbers;i++){
+    for (let i=0; i<numbers.length;i++){
         if (numbers[i]=== target){
             return i
         }
