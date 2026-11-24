@@ -1,15 +1,13 @@
-const has_duplicates=(numbers)=>{
-    for (let i=0;i<numbers.length;i++){
-        for (let j=i+1;j<numbers.length;j++){
-            
-            if (numbers[i]===numbers[j]){
-                return true
-            }
-        }
-        
+const has_duplicates = (numbers) => {
+  let nlist = [];
+  for (const num of numbers) {
+    if (nlist.includes(num)) {   // check ALL stored values
+      return true;
     }
-    return false
-}
-console.log(has_duplicates([1, 2, 3, 2]
-))
-console.log(has_duplicates([1, 2, 3, 4]))
+    nlist.push(num);             // store after checking
+  }
+  return false;                  // only after the loop finishes
+};
+
+console.log(has_duplicates([1, 2, 3, 2])); // true
+console.log(has_duplicates([1, 2, 3, 4])); // false
