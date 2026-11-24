@@ -1,1 +1,3 @@
-const find_number(numbers, target)
+const find_number=(numbers, target)=>{
+    
+}
