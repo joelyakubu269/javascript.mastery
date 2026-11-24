@@ -5,3 +5,6 @@ const reverse_list=(items)=>{
     }
     return rlist
 }
+console.log(reverse_list(reverse_list(items)))
+console.log(reverse_list(["a", "b", "c"]
+))
