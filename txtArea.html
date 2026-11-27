@@ -14,7 +14,10 @@
     <textarea name="marx" id="amber">0/250</textarea>
     <script>
         const txtarea= document.getElementById("#amber")
-        let num
+        txtarea.addEventListener("input",event=()=>{
+            let num = txtarea.value.length
+        })
+        
     </script>
 </body>
 </html>
