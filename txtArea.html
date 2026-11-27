@@ -5,20 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max character count</title>
     <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
         #amber{
             border: 4px solid black;
+            
         }
     </style>
 </head>
 <body>
-    <textarea name="marx" id="amber" maxlength="250">0/250</textarea>
+    <textarea name="marx" id="amber" maxlength="250"></textarea>
+    <p id="counter">0/250</p>
     <script>
         const txtarea= document.getElementById("amber")
         txtarea.addEventListener("input",()=>{
             let num = txtarea.value.length
-            txtarea.textContent= `${num/250}`
+            const counter= document.getElementById("counter")
+                counter.textContent= `${num}/250`
             if (num>=250){
                 txtarea.style.borderColor= "red"
+            }else{
+                txtarea.style.borderColor= "black"
             }
         })
         
