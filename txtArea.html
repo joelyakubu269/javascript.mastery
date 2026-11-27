@@ -11,13 +11,14 @@
     </style>
 </head>
 <body>
-    <textarea name="marx" id="amber">0/250</textarea>
+    <textarea name="marx" id="amber" maxlength="250">0/250</textarea>
     <script>
         const txtarea= document.getElementById("amber")
         txtarea.addEventListener("input",()=>{
             let num = txtarea.value.length
-            if (num>250){
-                txtarea.border.style.backgroundColor=black
+            txtarea.textContent= `${num/250}`
+            if (num>=250){
+                txtarea.style.borderColor= "red"
             }
         })
         
