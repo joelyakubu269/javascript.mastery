@@ -1,0 +1,112 @@
+
+{
+  "title": "JavaScript Fundamentals Quiz",
+  "description": "Test your understanding of JavaScript fundamentals.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which keyword is used to declare a variable that can be reassigned?",
+      "options": ["const", "let", "static", "final"],
+      "correctAnswer": 1,
+      "explanation": "The let keyword declares a block-scoped variable that can be reassigned."
+    },
+    {
+      "id": 2,
+      "question": "What is the result of typeof null in JavaScript?",
+      "options": ["null", "undefined", "object", "boolean"],
+      "correctAnswer": 2,
+      "explanation": "Due to a historical JavaScript bug, typeof null returns object."
+    },
+    {
+      "id": 3,
+      "question": "Which method adds an element to the end of an array?",
+      "options": ["shift()", "unshift()", "pop()", "push()"],
+      "correctAnswer": 3,
+      "explanation": "push() adds one or more elements to the end of an array."
+    },
+    {
+      "id": 4,
+      "question": "What does === check in JavaScript?",
+      "options": [
+        "Value only",
+        "Value and type",
+        "Type only",
+        "Whether two variables have the same name"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Strict equality checks whether two values are equal without performing type coercion."
+    },
+    {
+      "id": 5,
+      "question": "Which method selects the first element matching a CSS selector?",
+      "options": [
+        "getElementById()",
+        "querySelector()",
+        "querySelectorAll()",
+        "getElementsByClassName()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "querySelector() returns the first element matching the specified CSS selector."
+    },
+    {
+      "id": 6,
+      "question": "What does the map() method return?",
+      "options": [
+        "A modified original array",
+        "A boolean",
+        "A new array",
+        "A single object"
+      ],
+      "correctAnswer": 2,
+      "explanation": "map() creates and returns a new array containing the results of calling a callback on each array element."
+    },
+    {
+      "id": 7,
+      "question": "Which event occurs when a user changes the value of a textarea?",
+      "options": [
+        "mouseover",
+        "submit",
+        "input",
+        "load"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The input event fires when the value of an input or textarea changes through user interaction."
+    },
+    {
+      "id": 8,
+      "question": "What does preventDefault() do?",
+      "options": [
+        "Stops JavaScript execution",
+        "Prevents the browser's default action",
+        "Deletes an HTML element",
+        "Removes an event listener"
+      ],
+      "correctAnswer": 1,
+      "explanation": "preventDefault() prevents the default browser behaviour associated with a cancelable event."
+    },
+    {
+      "id": 9,
+      "question": "Which data structure follows the Last In, First Out (LIFO) principle?",
+      "options": [
+        "Queue",
+        "Linked List",
+        "Stack",
+        "Hash Table"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A stack follows LIFO: the last element inserted is the first one removed."
+    },
+    {
+      "id": 10,
+      "question": "What does the filter() method return?",
+      "options": [
+        "A single boolean",
+        "A new array containing elements that pass a condition",
+        "The first matching element",
+        "The original array with deleted elements"
+      ],
+      "correctAnswer": 1,
+      "explanation": "filter() creates a new array containing elements for which the callback returns true."
+    }
+  ]
+}
